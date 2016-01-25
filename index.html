@@ -1,73 +1,84 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="stone : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>stone</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/lcj96/stone">View on GitHub</a>
-
-          <h1 id="project_title">stone</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/lcj96/stone/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/lcj96/stone/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd%22%3E">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</a>
-
-</p>
-
-石头剪刀布
-
-
-
-
-<p></p>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>石头剪子布</title>
+</head>
+<script src="jquery-1.11.1.js" type="text/javascript"></script>
+<body>
 
 <div>
-<img id="jiandao" src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/jiandao.jpg?raw=true">
-<img id="shitou" src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/shitou.jpg?raw=true">
-<img id="bu" src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/bu.jpg?raw=true">
+<img id="jiandao"
+ src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/jiandao.jpg?raw=true">
+<img id="shitou"
+ src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/shitou.jpg?raw=true">
+<img id="bu"
+ src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/bu.jpg?raw=true">
 </div>
 
-<p><img id="my-result">
-vs
-<img id="computerresult"></p>
 
+<img id="my-result">
+<span>tie</span>
+<img id="computerresult">
 
+<script type="text/javascript">
+//点击剪刀
+var jaindao=
+document.getElementById("jiandao");
+jiandao.onclick = function(){
+    document.getElementById("my-result").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/jiandao.jpg?raw=true";
+var computerresult =Math.random();
+if(computerresult<0.33){
+  //jaindao
+  document.getElementById("computerresult").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/shitou.jpg?raw=true";
+}else if(computerresult<0.66){
+  //shitou
+  document.getElementById("computerresult").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/jiandao.jpg?raw=true";
+}else{
+ //bu 
+  document.getElementById("computerresult").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/bu.jpg?raw=true";
+}
+}
 
-<p>
-</p>
-      </section>
-    </div>
+//点击石头
+var shitou=
+document.getElementById("shitou");
+shitou.onclick = function(){
+    document.getElementById("my-result").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/shitou.jpg?raw=true";
+var computerresult =Math.random();
+if(computerresult<0.33){
+  //jaindao
+  document.getElementById("computerresult").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/shitou.jpg?raw=true";
+}else if(computerresult<0.66){
+  //shitou
+  document.getElementById("computerresult").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/jiandao.jpg?raw=true";
+}else{
+ //bu 
+  document.getElementById("computerresult").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/bu.jpg?raw=true";
+}
+}	 
+	 
+//点击布	 
+var bu=
+document.getElementById("bu");
+bu.onclick = function(){
+    document.getElementById("my-result").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/bu.jpg?raw=true";
+var computerresult =Math.random();
+if(computerresult<0.33){
+  //jaindao
+  document.getElementById("computerresult").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/shitou.jpg?raw=true";
+}else if(computerresult<0.66){
+  //shitou
+  document.getElementById("computerresult").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/jiandao.jpg?raw=true";
+}else{
+ //bu 
+  document.getElementById("computerresult").src="https://github.com/baidu-ife/ife/blob/master/2015_summer/asset/bu.jpg?raw=true";
+}
+}	 	 
+	 
+	 
+	 
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">stone maintained by <a href="https://github.com/lcj96">lcj96</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
 
   </body>
 </html>
